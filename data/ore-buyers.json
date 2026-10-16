@@ -1,0 +1,1500 @@
+{
+  "checkedAt": "2026-10-06",
+  "prices": [
+    {
+      "commodity_name": "Titanium",
+      "terminal_name": "TDD Area 18",
+      "price_sell": 8300
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "TDD Area 18",
+      "price_sell": 10000
+    },
+    {
+      "commodity_name": "Quartz",
+      "terminal_name": "TDD Area 18",
+      "price_sell": 4400
+    },
+    {
+      "commodity_name": "Laranite",
+      "terminal_name": "TDD Area 18",
+      "price_sell": 9100
+    },
+    {
+      "commodity_name": "Gold",
+      "terminal_name": "TDD Area 18",
+      "price_sell": 31000
+    },
+    {
+      "commodity_name": "Tungsten",
+      "terminal_name": "TDD Area 18",
+      "price_sell": 10000
+    },
+    {
+      "commodity_name": "Beryl",
+      "terminal_name": "TDD Area 18",
+      "price_sell": 20000
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "TDD Area 18",
+      "price_sell": 28000
+    },
+    {
+      "commodity_name": "Bexalite",
+      "terminal_name": "TDD Area 18",
+      "price_sell": 29000
+    },
+    {
+      "commodity_name": "Quantainium",
+      "terminal_name": "TDD Area 18",
+      "price_sell": 150000
+    },
+    {
+      "commodity_name": "Taranite",
+      "terminal_name": "TDD Area 18",
+      "price_sell": 27000
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "TDD New Babbage",
+      "price_sell": 10000
+    },
+    {
+      "commodity_name": "Gold",
+      "terminal_name": "TDD New Babbage",
+      "price_sell": 30000
+    },
+    {
+      "commodity_name": "Titanium",
+      "terminal_name": "TDD New Babbage",
+      "price_sell": 8300
+    },
+    {
+      "commodity_name": "Tungsten",
+      "terminal_name": "TDD New Babbage",
+      "price_sell": 10000
+    },
+    {
+      "commodity_name": "Beryl",
+      "terminal_name": "TDD New Babbage",
+      "price_sell": 20000
+    },
+    {
+      "commodity_name": "Laranite",
+      "terminal_name": "TDD New Babbage",
+      "price_sell": 9000
+    },
+    {
+      "commodity_name": "Quartz",
+      "terminal_name": "TDD New Babbage",
+      "price_sell": 4400
+    },
+    {
+      "commodity_name": "Taranite",
+      "terminal_name": "TDD New Babbage",
+      "price_sell": 28000
+    },
+    {
+      "commodity_name": "Quantainium",
+      "terminal_name": "TDD New Babbage",
+      "price_sell": 150000
+    },
+    {
+      "commodity_name": "Bexalite",
+      "terminal_name": "TDD New Babbage",
+      "price_sell": 28000
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "TDD New Babbage",
+      "price_sell": 28000
+    },
+    {
+      "commodity_name": "Iron",
+      "terminal_name": "TDD New Babbage",
+      "price_sell": 3400
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "Samson & Son's",
+      "price_sell": 7200
+    },
+    {
+      "commodity_name": "Tungsten",
+      "terminal_name": "Samson & Son's",
+      "price_sell": 8200
+    },
+    {
+      "commodity_name": "Gold",
+      "terminal_name": "Samson & Son's",
+      "price_sell": 23000
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "Samson & Son's",
+      "price_sell": 18000
+    },
+    {
+      "commodity_name": "Quantainium",
+      "terminal_name": "CBD Lorville",
+      "price_sell": 150000
+    },
+    {
+      "commodity_name": "Titanium",
+      "terminal_name": "Brio's Breaker",
+      "price_sell": 6200
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "Brio's Breaker",
+      "price_sell": 7200
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "Brio's Breaker",
+      "price_sell": 18000
+    },
+    {
+      "commodity_name": "Bexalite",
+      "terminal_name": "Brio's Breaker",
+      "price_sell": 27000
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "Devlin Scrap",
+      "price_sell": 7200
+    },
+    {
+      "commodity_name": "Titanium",
+      "terminal_name": "Devlin Scrap",
+      "price_sell": 6200
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "Devlin Scrap",
+      "price_sell": 18000
+    },
+    {
+      "commodity_name": "Titanium",
+      "terminal_name": "Reclamation Orinth",
+      "price_sell": 6200
+    },
+    {
+      "commodity_name": "Beryl",
+      "terminal_name": "Reclamation Orinth",
+      "price_sell": 15000
+    },
+    {
+      "commodity_name": "Quartz",
+      "terminal_name": "Reclamation Orinth",
+      "price_sell": 3100
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "Reclamation Orinth",
+      "price_sell": 21000
+    },
+    {
+      "commodity_name": "Iron",
+      "terminal_name": "Nyx Gateway (Stanton)",
+      "price_sell": 3400
+    },
+    {
+      "commodity_name": "Iron",
+      "terminal_name": "Terra Gateway (Stanton)",
+      "price_sell": 4000
+    },
+    {
+      "commodity_name": "Iron",
+      "terminal_name": "HDMS-Hahn",
+      "price_sell": 3200
+    },
+    {
+      "commodity_name": "Gold",
+      "terminal_name": "CRU-L4 Locker",
+      "price_sell": 22000
+    },
+    {
+      "commodity_name": "Tungsten",
+      "terminal_name": "CRU-L4 Locker",
+      "price_sell": 8100
+    },
+    {
+      "commodity_name": "Taranite",
+      "terminal_name": "CRU-L4 Locker",
+      "price_sell": 21000
+    },
+    {
+      "commodity_name": "Gold",
+      "terminal_name": "CBD Lorville",
+      "price_sell": 31000
+    },
+    {
+      "commodity_name": "Laranite",
+      "terminal_name": "CBD Lorville",
+      "price_sell": 8800
+    },
+    {
+      "commodity_name": "Quartz",
+      "terminal_name": "CBD Lorville",
+      "price_sell": 4400
+    },
+    {
+      "commodity_name": "Taranite",
+      "terminal_name": "CBD Lorville",
+      "price_sell": 27000
+    },
+    {
+      "commodity_name": "Titanium",
+      "terminal_name": "CBD Lorville",
+      "price_sell": 8300
+    },
+    {
+      "commodity_name": "Tungsten",
+      "terminal_name": "CBD Lorville",
+      "price_sell": 10000
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "CBD Lorville",
+      "price_sell": 10000
+    },
+    {
+      "commodity_name": "Beryl",
+      "terminal_name": "CBD Lorville",
+      "price_sell": 20000
+    },
+    {
+      "commodity_name": "Bexalite",
+      "terminal_name": "CBD Lorville",
+      "price_sell": 28000
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "CBD Lorville",
+      "price_sell": 28000
+    },
+    {
+      "commodity_name": "Laranite",
+      "terminal_name": "CRU-L5 Maintenance",
+      "price_sell": 6500
+    },
+    {
+      "commodity_name": "Beryl",
+      "terminal_name": "CRU-L5 Maintenance",
+      "price_sell": 15000
+    },
+    {
+      "commodity_name": "Quantainium",
+      "terminal_name": "CRU-L5 Maintenance",
+      "price_sell": 140000
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "CRU-L5 Maintenance",
+      "price_sell": 22000
+    },
+    {
+      "commodity_name": "Bexalite",
+      "terminal_name": "CRU-L5 Maintenance",
+      "price_sell": 24000
+    },
+    {
+      "commodity_name": "Iron",
+      "terminal_name": "TDD Area 18",
+      "price_sell": 3400
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "Ruin Station",
+      "price_sell": 27000
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "Ruin Station",
+      "price_sell": 9200
+    },
+    {
+      "commodity_name": "Iron",
+      "terminal_name": "Ruin Station",
+      "price_sell": 3200
+    },
+    {
+      "commodity_name": "Quartz",
+      "terminal_name": "Ruin Station",
+      "price_sell": 4200
+    },
+    {
+      "commodity_name": "Titanium",
+      "terminal_name": "Ruin Station",
+      "price_sell": 8300
+    },
+    {
+      "commodity_name": "Tungsten",
+      "terminal_name": "Ruin Station",
+      "price_sell": 9700
+    },
+    {
+      "commodity_name": "Quantainium",
+      "terminal_name": "Ruin Station",
+      "price_sell": 130000
+    },
+    {
+      "commodity_name": "Riccite",
+      "terminal_name": "Ruin Station",
+      "price_sell": 59000
+    },
+    {
+      "commodity_name": "Laranite",
+      "terminal_name": "Ruin Station",
+      "price_sell": 8700
+    },
+    {
+      "commodity_name": "Beryl",
+      "terminal_name": "Checkmate",
+      "price_sell": 19000
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "Checkmate",
+      "price_sell": 27000
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "Checkmate",
+      "price_sell": 9200
+    },
+    {
+      "commodity_name": "Quartz",
+      "terminal_name": "Checkmate",
+      "price_sell": 4200
+    },
+    {
+      "commodity_name": "Titanium",
+      "terminal_name": "Checkmate",
+      "price_sell": 8300
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "Rod's Fuel",
+      "price_sell": 11000
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "Rod's Fuel",
+      "price_sell": 30000
+    },
+    {
+      "commodity_name": "Beryl",
+      "terminal_name": "Rod's Fuel",
+      "price_sell": 24000
+    },
+    {
+      "commodity_name": "Bexalite",
+      "terminal_name": "Rod's Fuel",
+      "price_sell": 28000
+    },
+    {
+      "commodity_name": "Iron",
+      "terminal_name": "Rod's Fuel",
+      "price_sell": 3600
+    },
+    {
+      "commodity_name": "Laranite",
+      "terminal_name": "Rod's Fuel",
+      "price_sell": 9700
+    },
+    {
+      "commodity_name": "Quartz",
+      "terminal_name": "Rod's Fuel",
+      "price_sell": 4200
+    },
+    {
+      "commodity_name": "Riccite",
+      "terminal_name": "Rod's Fuel",
+      "price_sell": 67000
+    },
+    {
+      "commodity_name": "Taranite",
+      "terminal_name": "Rod's Fuel",
+      "price_sell": 25000
+    },
+    {
+      "commodity_name": "Titanium",
+      "terminal_name": "Rod's Fuel",
+      "price_sell": 8300
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "Megumi",
+      "price_sell": 27000
+    },
+    {
+      "commodity_name": "Beryl",
+      "terminal_name": "Megumi",
+      "price_sell": 19000
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "Megumi",
+      "price_sell": 9200
+    },
+    {
+      "commodity_name": "Iron",
+      "terminal_name": "Megumi",
+      "price_sell": 3600
+    },
+    {
+      "commodity_name": "Titanium",
+      "terminal_name": "Megumi",
+      "price_sell": 7900
+    },
+    {
+      "commodity_name": "Tungsten",
+      "terminal_name": "Megumi",
+      "price_sell": 12000
+    },
+    {
+      "commodity_name": "Riccite",
+      "terminal_name": "Patch City",
+      "price_sell": 67000
+    },
+    {
+      "commodity_name": "Quartz",
+      "terminal_name": "Patch City",
+      "price_sell": 4600
+    },
+    {
+      "commodity_name": "Laranite",
+      "terminal_name": "Patch City",
+      "price_sell": 8700
+    },
+    {
+      "commodity_name": "Iron",
+      "terminal_name": "Patch City",
+      "price_sell": 3200
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "Patch City",
+      "price_sell": 27000
+    },
+    {
+      "commodity_name": "Bexalite",
+      "terminal_name": "Patch City",
+      "price_sell": 30000
+    },
+    {
+      "commodity_name": "Beryl",
+      "terminal_name": "Patch City",
+      "price_sell": 19000
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "Patch City",
+      "price_sell": 9200
+    },
+    {
+      "commodity_name": "Taranite",
+      "terminal_name": "Patch City",
+      "price_sell": 25000
+    },
+    {
+      "commodity_name": "Titanium",
+      "terminal_name": "Patch City",
+      "price_sell": 8300
+    },
+    {
+      "commodity_name": "Beryl",
+      "terminal_name": "Starlight Service",
+      "price_sell": 19000
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "Starlight Service",
+      "price_sell": 27000
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "Starlight Service",
+      "price_sell": 9200
+    },
+    {
+      "commodity_name": "Iron",
+      "terminal_name": "Starlight Service",
+      "price_sell": 3200
+    },
+    {
+      "commodity_name": "Laranite",
+      "terminal_name": "Starlight Service",
+      "price_sell": 8700
+    },
+    {
+      "commodity_name": "Titanium",
+      "terminal_name": "Starlight Service",
+      "price_sell": 8400
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "Endgame",
+      "price_sell": 27000
+    },
+    {
+      "commodity_name": "Beryl",
+      "terminal_name": "Endgame",
+      "price_sell": 21000
+    },
+    {
+      "commodity_name": "Bexalite",
+      "terminal_name": "Endgame",
+      "price_sell": 29000
+    },
+    {
+      "commodity_name": "Iron",
+      "terminal_name": "Endgame",
+      "price_sell": 3900
+    },
+    {
+      "commodity_name": "Laranite",
+      "terminal_name": "Endgame",
+      "price_sell": 8700
+    },
+    {
+      "commodity_name": "Quartz",
+      "terminal_name": "Endgame",
+      "price_sell": 4200
+    },
+    {
+      "commodity_name": "Riccite",
+      "terminal_name": "Endgame",
+      "price_sell": 67000
+    },
+    {
+      "commodity_name": "Titanium",
+      "terminal_name": "Endgame",
+      "price_sell": 8300
+    },
+    {
+      "commodity_name": "Bexalite",
+      "terminal_name": "Jackson's Swap",
+      "price_sell": 30000
+    },
+    {
+      "commodity_name": "Gold",
+      "terminal_name": "Jackson's Swap",
+      "price_sell": 26000
+    },
+    {
+      "commodity_name": "Stileron",
+      "terminal_name": "Jackson's Swap",
+      "price_sell": 130000
+    },
+    {
+      "commodity_name": "Taranite",
+      "terminal_name": "Jackson's Swap",
+      "price_sell": 25000
+    },
+    {
+      "commodity_name": "Beryl",
+      "terminal_name": "Gaslight",
+      "price_sell": 19000
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "Gaslight",
+      "price_sell": 33000
+    },
+    {
+      "commodity_name": "Laranite",
+      "terminal_name": "Gaslight",
+      "price_sell": 8700
+    },
+    {
+      "commodity_name": "Quartz",
+      "terminal_name": "Gaslight",
+      "price_sell": 4200
+    },
+    {
+      "commodity_name": "Riccite",
+      "terminal_name": "Gaslight",
+      "price_sell": 67000
+    },
+    {
+      "commodity_name": "Titanium",
+      "terminal_name": "Gaslight",
+      "price_sell": 8300
+    },
+    {
+      "commodity_name": "Quartz",
+      "terminal_name": "Stanton Gateway (Pyro)",
+      "price_sell": 5100
+    },
+    {
+      "commodity_name": "Tungsten",
+      "terminal_name": "Stanton Gateway (Pyro)",
+      "price_sell": 11000
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "Rat's Nest",
+      "price_sell": 9200
+    },
+    {
+      "commodity_name": "Beryl",
+      "terminal_name": "Rat's Nest",
+      "price_sell": 19000
+    },
+    {
+      "commodity_name": "Bexalite",
+      "terminal_name": "Rat's Nest",
+      "price_sell": 31000
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "Rat's Nest",
+      "price_sell": 27000
+    },
+    {
+      "commodity_name": "Gold",
+      "terminal_name": "Rat's Nest",
+      "price_sell": 29000
+    },
+    {
+      "commodity_name": "Iron",
+      "terminal_name": "Rat's Nest",
+      "price_sell": 3200
+    },
+    {
+      "commodity_name": "Laranite",
+      "terminal_name": "Rat's Nest",
+      "price_sell": 8700
+    },
+    {
+      "commodity_name": "Titanium",
+      "terminal_name": "Rat's Nest",
+      "price_sell": 8300
+    },
+    {
+      "commodity_name": "Gold",
+      "terminal_name": "Ashland",
+      "price_sell": 29000
+    },
+    {
+      "commodity_name": "Riccite",
+      "terminal_name": "Ashland",
+      "price_sell": 84000
+    },
+    {
+      "commodity_name": "Quantainium",
+      "terminal_name": "Ashland",
+      "price_sell": 160000
+    },
+    {
+      "commodity_name": "Stileron",
+      "terminal_name": "Ashland",
+      "price_sell": 130000
+    },
+    {
+      "commodity_name": "Taranite",
+      "terminal_name": "Ashland",
+      "price_sell": 25000
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "Dudley & Daughters",
+      "price_sell": 27000
+    },
+    {
+      "commodity_name": "Beryl",
+      "terminal_name": "Dudley & Daughters",
+      "price_sell": 19000
+    },
+    {
+      "commodity_name": "Bexalite",
+      "terminal_name": "Dudley & Daughters",
+      "price_sell": 30000
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "Dudley & Daughters",
+      "price_sell": 9200
+    },
+    {
+      "commodity_name": "Iron",
+      "terminal_name": "Dudley & Daughters",
+      "price_sell": 3600
+    },
+    {
+      "commodity_name": "Laranite",
+      "terminal_name": "Dudley & Daughters",
+      "price_sell": 9100
+    },
+    {
+      "commodity_name": "Quartz",
+      "terminal_name": "Dudley & Daughters",
+      "price_sell": 4200
+    },
+    {
+      "commodity_name": "Riccite",
+      "terminal_name": "Dudley & Daughters",
+      "price_sell": 67000
+    },
+    {
+      "commodity_name": "Titanium",
+      "terminal_name": "Dudley & Daughters",
+      "price_sell": 8300
+    },
+    {
+      "commodity_name": "Quartz",
+      "terminal_name": "Nyx Gateway (Stanton)",
+      "price_sell": 4600
+    },
+    {
+      "commodity_name": "Tungsten",
+      "terminal_name": "Nyx Gateway (Stanton)",
+      "price_sell": 11000
+    },
+    {
+      "commodity_name": "Tungsten",
+      "terminal_name": "Terra Gateway (Stanton)",
+      "price_sell": 11000
+    },
+    {
+      "commodity_name": "Quartz",
+      "terminal_name": "Seraphim",
+      "price_sell": 4700
+    },
+    {
+      "commodity_name": "Riccite",
+      "terminal_name": "CBD Lorville",
+      "price_sell": 66000
+    },
+    {
+      "commodity_name": "Iron",
+      "terminal_name": "CBD Lorville",
+      "price_sell": 3400
+    },
+    {
+      "commodity_name": "Stileron",
+      "terminal_name": "CBD Lorville",
+      "price_sell": 140000
+    },
+    {
+      "commodity_name": "Quartz",
+      "terminal_name": "Pyro Gateway (Stanton)",
+      "price_sell": 4600
+    },
+    {
+      "commodity_name": "Tungsten",
+      "terminal_name": "Pyro Gateway (Stanton)",
+      "price_sell": 11000
+    },
+    {
+      "commodity_name": "Laranite",
+      "terminal_name": "CRU-L1",
+      "price_sell": 8500
+    },
+    {
+      "commodity_name": "Gold",
+      "terminal_name": "ARC-L1",
+      "price_sell": 30000
+    },
+    {
+      "commodity_name": "Riccite",
+      "terminal_name": "TDD Area 18",
+      "price_sell": 66000
+    },
+    {
+      "commodity_name": "Stileron",
+      "terminal_name": "TDD Area 18",
+      "price_sell": 140000
+    },
+    {
+      "commodity_name": "Beryl",
+      "terminal_name": "HUR-L1",
+      "price_sell": 22000
+    },
+    {
+      "commodity_name": "Laranite",
+      "terminal_name": "HUR-L1",
+      "price_sell": 8500
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "ARC-L3",
+      "price_sell": 10000
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "ARC-L4",
+      "price_sell": 9400
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "ARC-L5",
+      "price_sell": 28000
+    },
+    {
+      "commodity_name": "Laranite",
+      "terminal_name": "HUR-L2",
+      "price_sell": 8500
+    },
+    {
+      "commodity_name": "Beryl",
+      "terminal_name": "MIC-L5",
+      "price_sell": 20000
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "MIC-L1",
+      "price_sell": 31000
+    },
+    {
+      "commodity_name": "Beryl",
+      "terminal_name": "HUR-L3",
+      "price_sell": 23000
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "HUR-L3",
+      "price_sell": 10000
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "HUR-L3",
+      "price_sell": 28000
+    },
+    {
+      "commodity_name": "Beryl",
+      "terminal_name": "CRU-L5",
+      "price_sell": 20000
+    },
+    {
+      "commodity_name": "Beryl",
+      "terminal_name": "HUR-L4",
+      "price_sell": 22000
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "HUR-L4",
+      "price_sell": 10000
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "MIC-L3",
+      "price_sell": 31000
+    },
+    {
+      "commodity_name": "Riccite",
+      "terminal_name": "TDD New Babbage",
+      "price_sell": 65000
+    },
+    {
+      "commodity_name": "Stileron",
+      "terminal_name": "TDD New Babbage",
+      "price_sell": 140000
+    },
+    {
+      "commodity_name": "Stileron",
+      "terminal_name": "Rayari Kaltag",
+      "price_sell": 140000
+    },
+    {
+      "commodity_name": "Stileron",
+      "terminal_name": "Terra Mills",
+      "price_sell": 140000
+    },
+    {
+      "commodity_name": "Stileron",
+      "terminal_name": "Hickes Research",
+      "price_sell": 140000
+    },
+    {
+      "commodity_name": "Quartz",
+      "terminal_name": "Hickes Research",
+      "price_sell": 4000
+    },
+    {
+      "commodity_name": "Riccite",
+      "terminal_name": "ArcCorp 141",
+      "price_sell": 91000
+    },
+    {
+      "commodity_name": "Stileron",
+      "terminal_name": "ArcCorp 141",
+      "price_sell": 140000
+    },
+    {
+      "commodity_name": "Stileron",
+      "terminal_name": "ArcCorp 157",
+      "price_sell": 140000
+    },
+    {
+      "commodity_name": "Riccite",
+      "terminal_name": "ArcCorp 157",
+      "price_sell": 91000
+    },
+    {
+      "commodity_name": "Quartz",
+      "terminal_name": "Deakins Research",
+      "price_sell": 4000
+    },
+    {
+      "commodity_name": "Stileron",
+      "terminal_name": "Deakins Research",
+      "price_sell": 150000
+    },
+    {
+      "commodity_name": "Quartz",
+      "terminal_name": "Rayari Kaltag",
+      "price_sell": 4000
+    },
+    {
+      "commodity_name": "Stileron",
+      "terminal_name": "Rayari Anvik",
+      "price_sell": 140000
+    },
+    {
+      "commodity_name": "Quartz",
+      "terminal_name": "Rayari Anvik",
+      "price_sell": 4000
+    },
+    {
+      "commodity_name": "Beryl",
+      "terminal_name": "HUR-L5",
+      "price_sell": 22000
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "TDD Orison",
+      "price_sell": 10000
+    },
+    {
+      "commodity_name": "Beryl",
+      "terminal_name": "TDD Orison",
+      "price_sell": 20000
+    },
+    {
+      "commodity_name": "Gold",
+      "terminal_name": "TDD Orison",
+      "price_sell": 30000
+    },
+    {
+      "commodity_name": "Laranite",
+      "terminal_name": "TDD Orison",
+      "price_sell": 8500
+    },
+    {
+      "commodity_name": "Quantainium",
+      "terminal_name": "TDD Orison",
+      "price_sell": 170000
+    },
+    {
+      "commodity_name": "Quartz",
+      "terminal_name": "TDD Orison",
+      "price_sell": 4400
+    },
+    {
+      "commodity_name": "Taranite",
+      "terminal_name": "TDD Orison",
+      "price_sell": 28000
+    },
+    {
+      "commodity_name": "Titanium",
+      "terminal_name": "TDD Orison",
+      "price_sell": 8300
+    },
+    {
+      "commodity_name": "Tungsten",
+      "terminal_name": "TDD Orison",
+      "price_sell": 10000
+    },
+    {
+      "commodity_name": "Quantainium",
+      "terminal_name": "GrimHEX",
+      "price_sell": 130000
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "GrimHEX",
+      "price_sell": 25000
+    },
+    {
+      "commodity_name": "Gold",
+      "terminal_name": "GrimHEX",
+      "price_sell": 25000
+    },
+    {
+      "commodity_name": "Bexalite",
+      "terminal_name": "GrimHEX",
+      "price_sell": 26000
+    },
+    {
+      "commodity_name": "Taranite",
+      "terminal_name": "GrimHEX",
+      "price_sell": 22000
+    },
+    {
+      "commodity_name": "Iron",
+      "terminal_name": "GrimHEX",
+      "price_sell": 2700
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "GrimHEX",
+      "price_sell": 8200
+    },
+    {
+      "commodity_name": "Tungsten",
+      "terminal_name": "GrimHEX",
+      "price_sell": 8700
+    },
+    {
+      "commodity_name": "Iron",
+      "terminal_name": "TDD Orison",
+      "price_sell": 3400
+    },
+    {
+      "commodity_name": "Bexalite",
+      "terminal_name": "TDD Orison",
+      "price_sell": 28000
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "TDD Orison",
+      "price_sell": 25000
+    },
+    {
+      "commodity_name": "Beryl",
+      "terminal_name": "Orbituary",
+      "price_sell": 19000
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "Orbituary",
+      "price_sell": 25000
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "Orbituary",
+      "price_sell": 9200
+    },
+    {
+      "commodity_name": "Laranite",
+      "terminal_name": "Orbituary",
+      "price_sell": 8500
+    },
+    {
+      "commodity_name": "Quartz",
+      "terminal_name": "Orbituary",
+      "price_sell": 4200
+    },
+    {
+      "commodity_name": "Titanium",
+      "terminal_name": "Orbituary",
+      "price_sell": 8300
+    },
+    {
+      "commodity_name": "Stileron",
+      "terminal_name": "TDD Orison",
+      "price_sell": 140000
+    },
+    {
+      "commodity_name": "Riccite",
+      "terminal_name": "TDD Orison",
+      "price_sell": 66000
+    },
+    {
+      "commodity_name": "Quartz",
+      "terminal_name": "GrimHEX",
+      "price_sell": 3500
+    },
+    {
+      "commodity_name": "Titanium",
+      "terminal_name": "GrimHEX",
+      "price_sell": 7000
+    },
+    {
+      "commodity_name": "Riccite",
+      "terminal_name": "GrimHEX",
+      "price_sell": 59000
+    },
+    {
+      "commodity_name": "Laranite",
+      "terminal_name": "GrimHEX",
+      "price_sell": 7400
+    },
+    {
+      "commodity_name": "Beryl",
+      "terminal_name": "GrimHEX",
+      "price_sell": 16000
+    },
+    {
+      "commodity_name": "Stileron",
+      "terminal_name": "GrimHEX",
+      "price_sell": 110000
+    },
+    {
+      "commodity_name": "Gold",
+      "terminal_name": "Canard View",
+      "price_sell": 26000
+    },
+    {
+      "commodity_name": "Riccite",
+      "terminal_name": "Canard View",
+      "price_sell": 67000
+    },
+    {
+      "commodity_name": "Stileron",
+      "terminal_name": "Canard View",
+      "price_sell": 130000
+    },
+    {
+      "commodity_name": "Taranite",
+      "terminal_name": "Canard View",
+      "price_sell": 25000
+    },
+    {
+      "commodity_name": "Gold",
+      "terminal_name": "Fallow Field",
+      "price_sell": 26000
+    },
+    {
+      "commodity_name": "Stileron",
+      "terminal_name": "Fallow Field",
+      "price_sell": 130000
+    },
+    {
+      "commodity_name": "Taranite",
+      "terminal_name": "Fallow Field",
+      "price_sell": 28000
+    },
+    {
+      "commodity_name": "Bexalite",
+      "terminal_name": "Canard View",
+      "price_sell": 30000
+    },
+    {
+      "commodity_name": "Taranite",
+      "terminal_name": "The Golden Riviera",
+      "price_sell": 25000
+    },
+    {
+      "commodity_name": "Stileron",
+      "terminal_name": "The Golden Riviera",
+      "price_sell": 130000
+    },
+    {
+      "commodity_name": "Riccite",
+      "terminal_name": "The Golden Riviera",
+      "price_sell": 74000
+    },
+    {
+      "commodity_name": "Quantainium",
+      "terminal_name": "The Golden Riviera",
+      "price_sell": 160000
+    },
+    {
+      "commodity_name": "Gold",
+      "terminal_name": "The Golden Riviera",
+      "price_sell": 28000
+    },
+    {
+      "commodity_name": "Bexalite",
+      "terminal_name": "The Golden Riviera",
+      "price_sell": 29000
+    },
+    {
+      "commodity_name": "Stileron",
+      "terminal_name": "Ruin Station",
+      "price_sell": 110000
+    },
+    {
+      "commodity_name": "Bexalite",
+      "terminal_name": "Sacren's Plot",
+      "price_sell": 36000
+    },
+    {
+      "commodity_name": "Gold",
+      "terminal_name": "Sacren's Plot",
+      "price_sell": 26000
+    },
+    {
+      "commodity_name": "Riccite",
+      "terminal_name": "Sacren's Plot",
+      "price_sell": 74000
+    },
+    {
+      "commodity_name": "Stileron",
+      "terminal_name": "Sacren's Plot",
+      "price_sell": 130000
+    },
+    {
+      "commodity_name": "Taranite",
+      "terminal_name": "Sacren's Plot",
+      "price_sell": 25000
+    },
+    {
+      "commodity_name": "Titanium",
+      "terminal_name": "ARC-L5",
+      "price_sell": 8300
+    },
+    {
+      "commodity_name": "Titanium",
+      "terminal_name": "ARC-L3",
+      "price_sell": 8600
+    },
+    {
+      "commodity_name": "Bexalite",
+      "terminal_name": "Levski",
+      "price_sell": 27000
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "Levski",
+      "price_sell": 24000
+    },
+    {
+      "commodity_name": "Gold",
+      "terminal_name": "Levski",
+      "price_sell": 27000
+    },
+    {
+      "commodity_name": "Laranite",
+      "terminal_name": "Levski",
+      "price_sell": 7800
+    },
+    {
+      "commodity_name": "Quartz",
+      "terminal_name": "Levski",
+      "price_sell": 3700
+    },
+    {
+      "commodity_name": "Riccite",
+      "terminal_name": "Levski",
+      "price_sell": 77000
+    },
+    {
+      "commodity_name": "Stileron",
+      "terminal_name": "Levski",
+      "price_sell": 140000
+    },
+    {
+      "commodity_name": "Taranite",
+      "terminal_name": "Levski",
+      "price_sell": 28000
+    },
+    {
+      "commodity_name": "Titanium",
+      "terminal_name": "Levski",
+      "price_sell": 7400
+    },
+    {
+      "commodity_name": "Tungsten",
+      "terminal_name": "Levski",
+      "price_sell": 9200
+    },
+    {
+      "commodity_name": "Gold",
+      "terminal_name": "Pyro Gateway (Nyx)",
+      "price_sell": 31000
+    },
+    {
+      "commodity_name": "Quartz",
+      "terminal_name": "Stanton Gateway (Nyx)",
+      "price_sell": 4400
+    },
+    {
+      "commodity_name": "Titanium",
+      "terminal_name": "Stanton Gateway (Nyx)",
+      "price_sell": 8300
+    },
+    {
+      "commodity_name": "Tungsten",
+      "terminal_name": "Stanton Gateway (Nyx)",
+      "price_sell": 10000
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "Stanton Gateway (Nyx)",
+      "price_sell": 9800
+    },
+    {
+      "commodity_name": "Borase",
+      "terminal_name": "Stanton Gateway (Nyx)",
+      "price_sell": 28000
+    },
+    {
+      "commodity_name": "Laranite",
+      "terminal_name": "Stanton Gateway (Nyx)",
+      "price_sell": 9200
+    },
+    {
+      "commodity_name": "Bexalite",
+      "terminal_name": "Stanton Gateway (Nyx)",
+      "price_sell": 29000
+    },
+    {
+      "commodity_name": "Taranite",
+      "terminal_name": "Stanton Gateway (Nyx)",
+      "price_sell": 27000
+    },
+    {
+      "commodity_name": "Quantainium",
+      "terminal_name": "Stanton Gateway (Nyx)",
+      "price_sell": 150000
+    },
+    {
+      "commodity_name": "Stileron",
+      "terminal_name": "Nyx Gateway (Pyro)",
+      "price_sell": 140000
+    },
+    {
+      "commodity_name": "Iron",
+      "terminal_name": "HDMS-Perlman",
+      "price_sell": 3200
+    },
+    {
+      "commodity_name": "Quantainium",
+      "terminal_name": "ArcCorp 141",
+      "price_sell": 170000
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "CRU-L1",
+      "price_sell": 10000
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "CRU-L5",
+      "price_sell": 10000
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "CRU-L4",
+      "price_sell": 10000
+    },
+    {
+      "commodity_name": "Quantainium",
+      "terminal_name": "Fallow Field",
+      "price_sell": 170000
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "HUR-L5",
+      "price_sell": 10000
+    },
+    {
+      "commodity_name": "Quantainium",
+      "terminal_name": "Canard View",
+      "price_sell": 170000
+    },
+    {
+      "commodity_name": "Iron",
+      "terminal_name": "PSS Alpha",
+      "price_sell": 3500
+    },
+    {
+      "commodity_name": "Agricium",
+      "terminal_name": "PSS Alpha",
+      "price_sell": 10000
+    },
+    {
+      "commodity_name": "Iron",
+      "terminal_name": "PSS Delta",
+      "price_sell": 2700
+    },
+    {
+      "commodity_name": "Iron",
+      "terminal_name": "PSS Theta",
+      "price_sell": 3500
+    },
+    {
+      "commodity_name": "Beryl",
+      "terminal_name": "PSS Theta",
+      "price_sell": 20000
+    },
+    {
+      "commodity_name": "Iron",
+      "terminal_name": "PSS Lambda",
+      "price_sell": 3500
+    },
+    {
+      "commodity_name": "Tungsten",
+      "terminal_name": "PSS Lambda",
+      "price_sell": 10000
+    },
+    {
+      "commodity_name": "Ouratite",
+      "terminal_name": "Levski",
+      "price_sell": 46000
+    },
+    {
+      "commodity_name": "Ouratite",
+      "terminal_name": "Ruin Station",
+      "price_sell": 46000
+    },
+    {
+      "commodity_name": "Ouratite",
+      "terminal_name": "TDD New Babbage",
+      "price_sell": 46000
+    },
+    {
+      "commodity_name": "Ouratite",
+      "terminal_name": "GrimHEX",
+      "price_sell": 46000
+    },
+    {
+      "commodity_name": "Ouratite",
+      "terminal_name": "TDD Area 18",
+      "price_sell": 46000
+    },
+    {
+      "commodity_name": "Ouratite",
+      "terminal_name": "TDD Orison",
+      "price_sell": 46000
+    },
+    {
+      "commodity_name": "Ouratite",
+      "terminal_name": "CBD Lorville",
+      "price_sell": 46000
+    },
+    {
+      "commodity_name": "Iron",
+      "terminal_name": "Stanton Gateway (Nyx)",
+      "price_sell": 3200
+    },
+    {
+      "commodity_name": "Taranite",
+      "terminal_name": "Ruin Station",
+      "price_sell": 22000
+    },
+    {
+      "commodity_name": "Iron",
+      "terminal_name": "Gaslight",
+      "price_sell": 3900
+    },
+    {
+      "commodity_name": "Quantainium",
+      "terminal_name": "Levski",
+      "price_sell": 140000
+    },
+    {
+      "commodity_name": "Beryl",
+      "terminal_name": "Ruin Station",
+      "price_sell": 19000
+    },
+    {
+      "commodity_name": "Iron",
+      "terminal_name": "Rappel",
+      "price_sell": 153
+    },
+    {
+      "commodity_name": "Iron",
+      "terminal_name": "Pickers Field",
+      "price_sell": 153
+    }
+  ]
+}

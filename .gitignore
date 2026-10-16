@@ -1,0 +1,10 @@
+node_modules/
+.pnpm-store/
+dist-mac/
+*.new.exe
+*.log
+.env
+.env.*
+.aws/
+.codex/
+.agents/
