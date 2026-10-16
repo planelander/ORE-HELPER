@@ -3,6 +3,8 @@
 > **Windows download paused — October 16, 2026.** Microsoft Defender detects the
 > current executable as **Trojan:Win32/Sabsik.FL.A!ml**. Its safety has not been
 > established, and the executable download has been removed pending review.
+> The developer has submitted it to Microsoft for review as a suspected false
+> positive. Microsoft clearance has not yet been verified.
 > Do not run previously downloaded copies or disable protection to run them.
 > See [security status](SECURITY-STATUS.md).
 

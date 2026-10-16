@@ -11,9 +11,12 @@ paused, and the file has been removed from the current repository branch.
 Older commits may still contain the flagged executable; those copies should
 not be used. Source availability is not a security certification.
 
-The next step is a software-developer submission through
-[Microsoft Security Intelligence](https://www.microsoft.com/en-us/wdsi/filesubmission).
-No submission has yet been made. A replacement should only be published after
+The developer reports submitting the executable to Microsoft Security Intelligence
+on October 16, 2026, requesting review as a suspected false positive.
+Submission reference: `c42d1021-28d0-419e-a539-454612461956`.
+The developer believes the app is not malware; Microsoft clearance has not yet
+been verified. Submission does not mean the detection has been removed.
+A replacement should only be published after
 the detection is resolved and the exact release binary has been checked.
 
 Code signing identifies the publisher but does not remove a malware detection.
