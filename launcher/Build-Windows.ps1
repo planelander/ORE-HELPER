@@ -113,6 +113,7 @@ $compilerArguments = @(
     "/platform:anycpu",
     "/out:$temporaryOutput",
     "/win32icon:$iconPath",
+    "/resource:$iconPath,OreOps.Icon.ico",
     "/reference:System.dll",
     "/reference:System.Core.dll",
     "/reference:System.Windows.Forms.dll",

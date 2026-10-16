@@ -66,6 +66,7 @@ namespace OreOpsLauncher
                 string tradeShipsPath = Path.Combine(dataDirectory, "trade-ships.json");
 
                 ExtractResource(ScriptResource, scriptPath, true);
+                ExtractResource("OreOps.Icon.ico", Path.Combine(sourceDirectory, "ore-ops.ico"), true);
                 ExtractResource("OreOps.ScanOverlay.ps1", Path.Combine(sourceDirectory, "ScanOverlay.ps1"), true);
                 ExtractResource(DataResource, dataPath, true);
                 ExtractResource("OreOps.OreBuyers.json", Path.Combine(dataDirectory, "ore-buyers.json"), true);

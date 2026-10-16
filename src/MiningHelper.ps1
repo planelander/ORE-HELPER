@@ -900,6 +900,11 @@ Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
 
 $reader = New-Object System.Xml.XmlNodeReader $xaml
 $window = [Windows.Markup.XamlReader]::Load($reader)
+$windowIconPath = Join-Path $PSScriptRoot 'ore-ops.ico'
+if (-not (Test-Path -LiteralPath $windowIconPath)) { $windowIconPath = Join-Path $projectRoot 'launcher/ore-ops.ico' }
+if (Test-Path -LiteralPath $windowIconPath) {
+    $window.Icon = [Windows.Media.Imaging.BitmapFrame]::Create([uri]$windowIconPath)
+}
 
 function Find-Control([string]$name) {
     return $window.FindName($name)
