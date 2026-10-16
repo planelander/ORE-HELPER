@@ -36,11 +36,11 @@ Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
         Title="ORE//OPS - Star Citizen Mining Helper"
         Width="1180" Height="760" MinWidth="980" MinHeight="650"
         WindowStartupLocation="CenterScreen"
-        Background="#050507" Foreground="#F4EDF8"
+        Background="#000000" Foreground="#F4EDF8"
         FontFamily="Segoe UI">
     <Window.Resources>
-        <SolidColorBrush x:Key="Panel" Color="#101016"/>
-        <SolidColorBrush x:Key="Panel2" Color="#1B1826"/>
+        <SolidColorBrush x:Key="Panel" Color="#000000"/>
+        <SolidColorBrush x:Key="Panel2" Color="#08080D"/>
         <SolidColorBrush x:Key="Accent" Color="#FFB87A"/>
         <SolidColorBrush x:Key="Muted" Color="#AEA4BB"/>
         <Style TargetType="Button">
@@ -199,7 +199,18 @@ Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
             <Setter Property="Foreground" Value="#09090D"/>
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="FontSize" Value="11"/>
-            <Setter Property="Padding" Value="12,12"/>
+            <Setter Property="Padding" Value="12,9"/>
+            <Setter Property="FontFamily" Value="Bahnschrift SemiCondensed, Segoe UI"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="0" Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
             <Style.Triggers>
                 <Trigger Property="Tag" Value="Active">
                     <Setter Property="Background" Value="#FFB87A"/>
@@ -212,23 +223,31 @@ Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
     </Window.Resources>
 
     <Grid>
+        <Grid.RowDefinitions><RowDefinition Height="56"/><RowDefinition Height="*"/></Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="235"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Border Grid.Column="0" Background="#09090D" BorderBrush="#FFB87A" BorderThickness="16,22,0,14" CornerRadius="54,0,0,40" Margin="12,12,0,12">
-            <Grid Margin="12,16,12,12">
+        <Grid Grid.Row="0" Grid.ColumnSpan="2" Margin="12,12,12,8">
+            <Grid.ColumnDefinitions><ColumnDefinition Width="42"/><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/><ColumnDefinition Width="42"/></Grid.ColumnDefinitions>
+            <Border Background="#FFB87A" CornerRadius="22,0,0,22" Margin="0,0,4,0"/>
+            <Border Grid.Column="1" Background="#FFB87A"/>
+            <TextBlock Grid.Column="2" Text="MINING OPERATIONS" Foreground="#C7B5EF" Background="Black" FontFamily="Bahnschrift SemiCondensed, Segoe UI" FontSize="27" FontWeight="Bold" Padding="8,0" VerticalAlignment="Center"/>
+            <Border Grid.Column="3" Background="#FFB87A" CornerRadius="0,22,22,0"/>
+        </Grid>
+        <Border Grid.Row="1" Grid.Column="0" Background="#000000" BorderBrush="#C7B5EF" BorderThickness="22,36,0,14" CornerRadius="54,0,0,40" Margin="12,8,0,12">
+            <Grid Margin="8,12,8,10">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="36"/>
+                    <RowDefinition Height="18"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <StackPanel>
-                    <TextBlock Text="ORE//OPS" FontSize="25" FontWeight="Bold" Foreground="#FFB87A"/>
-                    <TextBlock Text="MINING COMPANION" FontSize="10" Foreground="#AEA4BB" Margin="2,3,0,0"/>
+                    <TextBlock Text="ORE//OPS" FontFamily="Bahnschrift SemiCondensed, Segoe UI" FontSize="28" FontWeight="Bold" Foreground="#FFB87A" HorizontalAlignment="Right"/>
+                    <TextBlock Text="MINING COMPANION" FontSize="9" Foreground="#C7B5EF" Margin="2,3,0,0" HorizontalAlignment="Right"/>
                 </StackPanel>
                 <StackPanel Grid.Row="2">
                     <Button x:Name="NavDashboard" Style="{StaticResource LcarsNav}" Content="01   DASHBOARD" HorizontalContentAlignment="Left" Margin="0,0,0,8"/>
@@ -239,7 +258,7 @@ Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
                     <Button x:Name="NavRuns" Style="{StaticResource LcarsNav}" Content="06   RUN LOG" HorizontalContentAlignment="Left" Margin="0,0,0,8"/>
                     <Button x:Name="NavSettings" Style="{StaticResource LcarsNav}" Content="07   SETTINGS" HorizontalContentAlignment="Left"/>
                 </StackPanel>
-                <Border Grid.Row="4" Background="#17121F" CornerRadius="18" Padding="12">
+                <Border Grid.Row="4" Background="#000000" BorderBrush="#E99FAD" BorderThickness="0,8,0,0" CornerRadius="0" Padding="8">
                     <StackPanel>
                         <TextBlock Text="CREATOR" Foreground="#AEA4BB" FontSize="9"/>
                         <TextBlock Text="ADONIS ANUBIS" Foreground="#C7B5EF" FontWeight="Bold" Margin="0,3,0,0"/>
@@ -248,6 +267,7 @@ Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
                         <TextBlock Text="LIVE DATA PROFILE" Foreground="#AEA4BB" FontSize="9"/>
                         <TextBlock x:Name="PatchLabel" Text="PATCH" Foreground="#FFB87A" FontWeight="Bold" Margin="0,4,0,0"/>
                         <TextBlock x:Name="UpdatedLabel" Text="Updated" Foreground="#5EE6A8" FontSize="10" FontWeight="SemiBold" Margin="0,2,0,0" TextWrapping="Wrap"/>
+                        <TextBlock x:Name="LiveVersionStatus" Foreground="#AEA4BB" FontSize="9" Margin="0,4,0,0" TextWrapping="Wrap"/>
                         <Button x:Name="SnapshotButton" Content="DOWNLOAD SNAPSHOT" FontSize="9"
                                 Padding="8,6" Margin="0,10,0,0" Background="#242033" BorderBrush="#746080"/>
                         <TextBlock x:Name="SnapshotStatus" Text="Ready" Foreground="#AEA4BB" FontSize="9"
@@ -257,7 +277,7 @@ Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
             </Grid>
         </Border>
 
-        <Grid Grid.Column="1" Margin="20,22,22,24">
+        <Grid Grid.Row="1" Grid.Column="1" Margin="20,8,22,16">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="18"/>
@@ -269,15 +289,15 @@ Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
                 <StackPanel>
-                    <TextBlock x:Name="PageTitle" Text="OPERATIONS DASHBOARD" FontSize="22" FontWeight="SemiBold"/>
+                    <TextBlock x:Name="PageTitle" Text="OPERATIONS DASHBOARD" FontFamily="Bahnschrift SemiCondensed, Segoe UI" Foreground="#C7B5EF" FontSize="24" FontWeight="Bold"/>
                     <TextBlock x:Name="PageSubtitle" Text="Plan the rock. Protect the ship. Maximize the haul." Foreground="#AEA4BB" Margin="0,4,0,0"/>
                 </StackPanel>
-                <Border Grid.Column="1" Background="#201C2B" BorderBrush="#746080" BorderThickness="1" CornerRadius="16" Padding="13,6">
-                    <TextBlock Text="SYSTEM READY" Foreground="#5EE6A8" FontSize="11" FontWeight="SemiBold"/>
+                <Border Grid.Column="1" Background="#E99FAD" CornerRadius="0,18,18,0" Padding="13,6" VerticalAlignment="Top">
+                    <TextBlock Text="SYSTEM ONLINE" Foreground="#000000" FontFamily="Bahnschrift SemiCondensed, Segoe UI" FontSize="12" FontWeight="Bold"/>
                 </Border>
             </Grid>
 
-            <Grid Grid.Row="1" Height="8" VerticalAlignment="Center" IsHitTestVisible="False">
+            <Grid Grid.Row="1" Height="12" VerticalAlignment="Center" IsHitTestVisible="False">
                 <Grid.ColumnDefinitions><ColumnDefinition Width="3*"/><ColumnDefinition Width="*"/><ColumnDefinition Width="72"/></Grid.ColumnDefinitions>
                 <Border Background="#FFB87A" CornerRadius="4,0,0,4" Margin="0,0,6,0"/>
                 <Border Grid.Column="1" Background="#C7B5EF" Margin="0,0,6,0"/>
@@ -289,14 +309,14 @@ Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="18"/>
                     <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="220"/>
-                        <ColumnDefinition Width="220"/>
                     </Grid.ColumnDefinitions>
-                    <Border Background="{StaticResource Panel}" BorderBrush="#4C405D" BorderThickness="1" CornerRadius="22,6,22,6" Padding="18" Margin="0,0,12,0">
+                    <Border Background="{StaticResource Panel}" BorderBrush="#C7B5EF" BorderThickness="0,4,0,0" CornerRadius="0" Padding="18" Margin="0,0,12,0">
                         <StackPanel>
                             <TextBlock Text="TOP 4 REFINED / aUEC PER SCU" Foreground="#AEA4BB" FontSize="10"/>
                             <ItemsControl x:Name="TopOreBuyers" Margin="0,8,0,0">
@@ -317,22 +337,22 @@ Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
                             <Button x:Name="RefreshOreBuyers" Content="REFRESH BUYER PRICES" FontSize="9" Padding="8,5" Margin="0,8,0,0" HorizontalAlignment="Left"/>
                         </StackPanel>
                     </Border>
-                    <Border x:Name="RefineryJobCard" Grid.Column="1" Background="{StaticResource Panel}" BorderBrush="#4C405D" BorderThickness="1" CornerRadius="22,6,22,6" Padding="14,10" Margin="0,0,12,0">
+                    <Border x:Name="RefineryJobCard" Grid.Column="1" Background="{StaticResource Panel}" BorderBrush="#C7B5EF" BorderThickness="0,4,0,0" CornerRadius="0" Padding="14,10" Margin="0,0,12,0">
                         <StackPanel>
                             <TextBlock Text="REFINERY JOBS / RUN LOG" Foreground="#AEA4BB" FontSize="9"/>
-                            <TextBlock x:Name="RefineryJobStatus" Text="No active job" Foreground="#C7B5EF" FontSize="18" FontWeight="Bold" Margin="0,5,0,0"/>
+                            <TextBlock x:Name="RefineryJobStatus" Text="No active job" Foreground="#C7B5EF" FontSize="18" FontWeight="Bold" TextWrapping="Wrap" Margin="0,5,0,0"/>
                             <TextBlock x:Name="RefineryJobDetail" Text="Set timers in the Run Log" Foreground="#C1B6CD" FontSize="10" TextTrimming="CharacterEllipsis" Margin="0,3,0,0"/>
                         </StackPanel>
                     </Border>
-                    <Border Grid.Column="2" Background="{StaticResource Panel}" BorderBrush="#4C405D" BorderThickness="1" CornerRadius="22,6,22,6" Padding="18" Width="220" HorizontalAlignment="Right">
-                        <StackPanel>
-                            <TextBlock Text="RECORDED RUNS" Foreground="#AEA4BB" FontSize="10"/>
-                            <TextBlock x:Name="RunCount" Text="0" Foreground="#5EE6A8" FontSize="25" FontWeight="Bold" Margin="0,8,0,0"/>
-                            <TextBlock Text="saved on this PC" Foreground="#C1B6CD"/>
-                        </StackPanel>
-                    </Border>
                 </Grid>
-                <Grid Grid.Row="2">
+                <Border Grid.Row="3" Background="{StaticResource Panel}" BorderBrush="#4C405D" BorderThickness="1" CornerRadius="14,4,14,4" Padding="12,6" Margin="0,10,0,0" HorizontalAlignment="Right">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <TextBlock Text="RECORDED RUNS" Foreground="#AEA4BB" FontSize="9" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="RunCount" Text="0" Foreground="#5EE6A8" FontSize="15" FontWeight="Bold" Margin="10,0" VerticalAlignment="Center"/>
+                        <TextBlock Text="saved on this PC" Foreground="#C1B6CD" FontSize="9" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+                <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"><Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="14"/>
@@ -344,7 +364,7 @@ Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
                     </StackPanel>
                     <StackPanel Grid.Row="2">
                     <UniformGrid Columns="3" Height="185" VerticalAlignment="Top">
-                        <Border Background="{StaticResource Panel}" BorderBrush="#4C405D" BorderThickness="1" CornerRadius="22,6,22,6" Padding="15" Margin="0,0,10,0">
+                        <Border Background="{StaticResource Panel}" BorderBrush="#C7B5EF" BorderThickness="0,4,0,0" CornerRadius="0" Padding="15" Margin="0,0,10,0">
                             <StackPanel>
                                 <TextBlock Text="STANTON" Foreground="#AEA4BB" FontSize="9" FontWeight="Bold"/>
                                 <TextBlock x:Name="StantonRefineryName" Text="-" Foreground="#FFB87A" FontSize="18" FontWeight="Bold" Margin="0,7,0,2"/>
@@ -354,7 +374,7 @@ Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
                                 <TextBlock x:Name="StantonRefineryNote" Text="-" Foreground="#C1B6CD" FontSize="11" TextWrapping="Wrap" Margin="0,8,0,0" LineHeight="16"/>
                             </StackPanel>
                         </Border>
-                        <Border Background="{StaticResource Panel}" BorderBrush="#4C405D" BorderThickness="1" CornerRadius="22,6,22,6" Padding="15" Margin="5,0">
+                        <Border Background="{StaticResource Panel}" BorderBrush="#C7B5EF" BorderThickness="0,4,0,0" CornerRadius="0" Padding="15" Margin="5,0">
                             <StackPanel>
                                 <TextBlock Text="PYRO" Foreground="#AEA4BB" FontSize="9" FontWeight="Bold"/>
                                 <TextBlock x:Name="PyroRefineryName" Text="-" Foreground="#ED6A5A" FontSize="18" FontWeight="Bold" Margin="0,7,0,2"/>
@@ -364,7 +384,7 @@ Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
                                 <TextBlock x:Name="PyroRefineryNote" Text="-" Foreground="#C1B6CD" FontSize="11" TextWrapping="Wrap" Margin="0,8,0,0" LineHeight="16"/>
                             </StackPanel>
                         </Border>
-                        <Border Background="{StaticResource Panel}" BorderBrush="#4C405D" BorderThickness="1" CornerRadius="22,6,22,6" Padding="15" Margin="10,0,0,0">
+                        <Border Background="{StaticResource Panel}" BorderBrush="#C7B5EF" BorderThickness="0,4,0,0" CornerRadius="0" Padding="15" Margin="10,0,0,0">
                             <StackPanel>
                                 <TextBlock Text="NYX" Foreground="#AEA4BB" FontSize="9" FontWeight="Bold"/>
                                 <TextBlock x:Name="NyxRefineryName" Text="-" Foreground="#CDB4DB" FontSize="18" FontWeight="Bold" Margin="0,7,0,2"/>
@@ -376,7 +396,7 @@ Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
                         </Border>
                     </UniformGrid>
                     <UniformGrid Columns="3" Margin="0,14,0,0">
-                        <Border Background="{StaticResource Panel}" BorderBrush="#4C405D" BorderThickness="1" CornerRadius="22,6,22,6" Padding="15" Margin="0,0,10,0">
+                        <Border Background="{StaticResource Panel}" BorderBrush="#C7B5EF" BorderThickness="0,4,0,0" CornerRadius="0" Padding="15" Margin="0,0,10,0">
                             <StackPanel>
                                 <TextBlock Text="CASTRA" Foreground="#AEA4BB" FontSize="9" FontWeight="Bold"/>
                                 <TextBlock Text="Coming Soon" Foreground="#C7B5EF" FontSize="18" FontWeight="Bold" Margin="0,7,0,2"/>
@@ -387,7 +407,7 @@ Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
                     </UniformGrid>
                     </StackPanel>
                 </Grid>
-            </Grid>
+            </ScrollViewer></Grid>
 
             <!-- Signature decoder -->
             <Grid x:Name="SignaturePage" Grid.Row="2" Visibility="Collapsed">
@@ -396,7 +416,7 @@ Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
                     <ColumnDefinition Width="20"/>
                     <ColumnDefinition Width="1.25*"/>
                 </Grid.ColumnDefinitions>
-                <Border Background="{StaticResource Panel}" BorderBrush="#4C405D" BorderThickness="1" CornerRadius="22,6,22,6" Padding="22">
+                <Border Background="{StaticResource Panel}" BorderBrush="#C7B5EF" BorderThickness="0,4,0,0" CornerRadius="0" Padding="22">
                     <StackPanel>
                         <TextBlock Text="RS SIGNATURE" FontSize="15" FontWeight="SemiBold" Foreground="#C7B5EF"/>
                         <TextBlock Text="Enter the number shown beside the scan return." Foreground="#AEA4BB" Margin="0,4,0,22" TextWrapping="Wrap"/>
@@ -423,7 +443,7 @@ Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="1.1*"/>
                     </Grid.RowDefinitions>
-                    <Border Background="{StaticResource Panel}" BorderBrush="#4C405D" BorderThickness="1" CornerRadius="22,6,22,6" Padding="22">
+                    <Border Background="{StaticResource Panel}" BorderBrush="#C7B5EF" BorderThickness="0,4,0,0" CornerRadius="0" Padding="22">
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
@@ -479,7 +499,7 @@ Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
                     <ColumnDefinition Width="20"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Border Background="{StaticResource Panel}" BorderBrush="#4C405D" BorderThickness="1" CornerRadius="22,6,22,6" Padding="22">
+                <Border Background="{StaticResource Panel}" BorderBrush="#C7B5EF" BorderThickness="0,4,0,0" CornerRadius="0" Padding="22">
                     <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
                         <StackPanel Margin="0,0,8,0">
                             <TextBlock Text="SHIP FIT" FontSize="15" FontWeight="SemiBold" Foreground="#C7B5EF"/>
@@ -556,7 +576,7 @@ Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
                         </StackPanel>
                     </ScrollViewer>
                 </Border>
-                <Border Grid.Column="2" Background="{StaticResource Panel}" BorderBrush="#4C405D" BorderThickness="1" CornerRadius="22,6,22,6" Padding="24">
+                <Border Grid.Column="2" Background="{StaticResource Panel}" BorderBrush="#C7B5EF" BorderThickness="0,4,0,0" CornerRadius="0" Padding="24">
                     <StackPanel VerticalAlignment="Center">
                         <TextBlock Text="BREAKABILITY ESTIMATE" Foreground="#AEA4BB" FontSize="10" HorizontalAlignment="Center"/>
                         <TextBlock x:Name="AssessmentStatus" Text="READY TO ASSESS" Foreground="#FFB87A" FontSize="27" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,16,0,6"/>
@@ -648,7 +668,7 @@ Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
                         <ColumnDefinition Width="20"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Border Background="{StaticResource Panel}" BorderBrush="#4C405D" BorderThickness="1" CornerRadius="22,6,22,6" Padding="16" VerticalAlignment="Top">
+                    <Border Background="{StaticResource Panel}" BorderBrush="#C7B5EF" BorderThickness="0,4,0,0" CornerRadius="0" Padding="16" VerticalAlignment="Top">
                         <StackPanel>
                             <TextBlock Text="HAUL DETAILS" FontSize="15" FontWeight="SemiBold" Foreground="#C7B5EF"/>
                             <TextBlock Text="Estimate gross value before refinery fees or hauling costs." Foreground="#AEA4BB" Margin="0,3,0,12"/>
@@ -664,14 +684,14 @@ Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
                         </StackPanel>
                     </Border>
                     <StackPanel Grid.Column="2">
-                        <Border Background="{StaticResource Panel}" BorderBrush="#4C405D" BorderThickness="1" CornerRadius="22,6,22,6" Padding="22" Margin="0,0,0,14">
+                        <Border Background="{StaticResource Panel}" BorderBrush="#C7B5EF" BorderThickness="0,4,0,0" CornerRadius="0" Padding="22" Margin="0,0,0,14">
                             <StackPanel>
                                 <TextBlock Text="RAW SALE ESTIMATE" Foreground="#AEA4BB" FontSize="10"/>
                                 <TextBlock x:Name="RawValue" Text="0 aUEC" Foreground="#C7B5EF" FontSize="29" FontWeight="Bold" Margin="0,10,0,3"/>
                                 <TextBlock x:Name="RawDetail" Text="-" Foreground="#C1B6CD"/>
                             </StackPanel>
                         </Border>
-                        <Border Background="{StaticResource Panel}" BorderBrush="#4C405D" BorderThickness="1" CornerRadius="22,6,22,6" Padding="22" Margin="0,0,0,14">
+                        <Border Background="{StaticResource Panel}" BorderBrush="#C7B5EF" BorderThickness="0,4,0,0" CornerRadius="0" Padding="22" Margin="0,0,0,14">
                             <StackPanel>
                                 <TextBlock Text="REFINED GROSS ESTIMATE" Foreground="#AEA4BB" FontSize="10"/>
                                 <TextBlock x:Name="RefinedValue" Text="0 aUEC" Foreground="#5EE6A8" FontSize="29" FontWeight="Bold" Margin="0,10,0,3"/>
@@ -690,7 +710,7 @@ Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
                         <RowDefinition Height="12"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Border Background="{StaticResource Panel}" BorderBrush="#4C405D" BorderThickness="1" CornerRadius="22,6,22,6" Padding="16">
+                    <Border Background="{StaticResource Panel}" BorderBrush="#C7B5EF" BorderThickness="0,4,0,0" CornerRadius="0" Padding="16">
                         <StackPanel>
                             <Grid>
                                 <Grid.RowDefinitions>
@@ -796,7 +816,7 @@ Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
 
             <!-- Run log -->
             <Grid x:Name="SettingsPage" Grid.Row="2" Visibility="Collapsed">
-                <Border Background="{StaticResource Panel}" BorderBrush="#4C405D" BorderThickness="1" CornerRadius="22,6,22,6" Padding="24" VerticalAlignment="Top">
+                <Border Background="{StaticResource Panel}" BorderBrush="#C7B5EF" BorderThickness="0,4,0,0" CornerRadius="0" Padding="24" VerticalAlignment="Top">
                     <StackPanel>
                         <TextBlock Text="OVERLAY LETTERING" Foreground="#C7B5EF" FontSize="15" FontWeight="SemiBold"/>
                         <TextBlock x:Name="OverlayCoverage" Foreground="#AEA4BB" TextWrapping="Wrap" Margin="0,8,0,0"/>
@@ -823,7 +843,7 @@ Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <Border Background="{StaticResource Panel}" BorderBrush="#4C405D" BorderThickness="1" CornerRadius="22,6,22,6" Padding="16">
+                <Border Background="{StaticResource Panel}" BorderBrush="#C7B5EF" BorderThickness="0,4,0,0" CornerRadius="0" Padding="16">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1.2*"/>
@@ -913,9 +933,90 @@ function Show-Page([string]$name, [string]$title, [string]$subtitle) {
 (Find-Control "NavRuns").Add_Click({ Show-Page "Runs" "RUN LOG" "Track refinery jobs, remaining time, and completed runs." })
 (Find-Control "NavSettings").Add_Click({ Show-Page "Settings" "SETTINGS" "Customize your in-game overlay." })
 
-(Find-Control "PatchLabel").Text = "STAR CITIZEN $($data.patch) LIVE"
-(Find-Control "UpdatedLabel").Text = "CHECKED CURRENT - $($data.verifiedAt)"
-(Find-Control "UpdatedLabel").ToolTip = "$($data.verificationStatus): $($data.liveBuild)`n$($data.verificationSource)"
+$script:liveProfileVersion = [string]$data.patch
+(Find-Control 'PatchLabel').Text = "STAR CITIZEN $($data.patch) LIVE"
+(Find-Control 'PatchLabel').ToolTip = "$($data.liveBuild)`n$($data.liveVersionSource)"
+(Find-Control 'UpdatedLabel').Text = "MINING DATA - $($data.verifiedAt)"
+(Find-Control 'UpdatedLabel').ToolTip = "$($data.verificationStatus)`n$($data.verificationSource)"
+(Find-Control 'LiveVersionStatus').Text = "LIVE version checked $($data.liveVersionCheckedAt)"
+
+function Get-OfficialLiveBuild([string]$Html) {
+    $match = [regex]::Match($Html, '(?i)\b(\d+\.\d+\.\d+)-LIVE\.(\d+)\b')
+    if (-not $match.Success) { throw 'No released LIVE build found in the official patch notes.' }
+    [pscustomobject]@{ version=$match.Groups[1].Value; build=($match.Groups[1].Value + '-LIVE.' + $match.Groups[2].Value) }
+}
+function Get-OfficialLiveVersionTitle([string]$Title) {
+    $match=[regex]::Match($Title, '^Star Citizen Alpha (\d+\.\d+\.\d+) Known Issues$')
+    if (-not $match.Success) { throw 'Unrecognized official LIVE known-issues title.' }
+    $match.Groups[1].Value
+}
+$script:liveVersionDownload = $null
+$script:liveVersionPending = $null
+$liveVersionTimer = [Windows.Threading.DispatcherTimer]::new()
+$liveVersionTimer.Interval = [TimeSpan]::FromMilliseconds(250)
+$liveVersionTimer.Add_Tick({
+    if (-not $script:liveVersionPending.IsCompleted) { return }
+    try {
+        $result = @($script:liveVersionDownload.EndInvoke($script:liveVersionPending))[-1]
+        if ($script:liveVersionDownload.HadErrors) { throw $script:liveVersionDownload.Streams.Error[0] }
+        if ([version]$result.version -lt [version]$script:liveProfileVersion) { throw 'Official response is older than the known LIVE version.' }
+        $script:liveProfileVersion = [string]$result.version
+        (Find-Control 'PatchLabel').Text = "STAR CITIZEN $($result.version) LIVE"
+        $buildLabel = if ($result.build) { [string]$result.build } elseif ($result.version -eq $data.patch) { "$($data.liveBuild) (bundled build reference)" } else { "LIVE $($result.version) (build number unavailable)" }
+        (Find-Control 'PatchLabel').ToolTip = "$buildLabel`n$($result.source)"
+        (Find-Control 'LiveVersionStatus').Text = "LIVE checked $(Get-Date -Format 'yyyy-MM-dd HH:mm')"
+    } catch {
+        (Find-Control 'LiveVersionStatus').Text = 'LIVE check unavailable; last known version shown.'
+    } finally {
+        $liveVersionTimer.Stop()
+        $script:liveVersionDownload.Dispose(); $script:liveVersionDownload=$null; $script:liveVersionPending=$null
+    }
+})
+function Start-LiveVersionCheck {
+    if ($script:liveVersionPending) { return }
+    (Find-Control 'LiveVersionStatus').Text = 'Checking official LIVE version...'
+    $script:liveVersionDownload=[PowerShell]::Create()
+    $null=$script:liveVersionDownload.AddScript('function Get-OfficialLiveBuild {' + ${function:Get-OfficialLiveBuild}.ToString() + '}')
+    $null=$script:liveVersionDownload.AddScript('function Get-OfficialLiveVersionTitle {' + ${function:Get-OfficialLiveVersionTitle}.ToString() + '}')
+    $null=$script:liveVersionDownload.AddScript({
+        $ErrorActionPreference='Stop'
+        [Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12
+        function Get-OfficialPage($Url) {
+            $request=[Net.WebRequest]::Create($Url)
+            $request.Timeout=10000; $request.ReadWriteTimeout=10000
+            $response=$request.GetResponse()
+            $reader=[IO.StreamReader]::new($response.GetResponseStream())
+            try { $reader.ReadToEnd() } finally { $reader.Dispose(); $response.Dispose() }
+        }
+        # RSI's current known-issues article is machine readable, unlike the
+        # release page body which may require JavaScript to render.
+        try {
+            $article=(Get-OfficialPage 'https://support.robertsspaceindustries.com/api/v2/help_center/en-us/articles/360056254754.json' | ConvertFrom-Json).article
+            $version=Get-OfficialLiveVersionTitle ([string]$article.title)
+            [pscustomobject]@{ version=$version; build=''; source=[string]$article.html_url }
+            return
+        } catch { }
+        $listing=Get-OfficialPage 'https://robertsspaceindustries.com/en/development'
+        $links=@([regex]::Matches($listing, '(?i)/(?:en/)?comm-link/Patch-Notes/\d+[^"''<>\s]*') | ForEach-Object { $_.Value } | Select-Object -Unique -First 3)
+        foreach ($link in $links) {
+            $url='https://robertsspaceindustries.com' + $link
+            try {
+                $html=Get-OfficialPage $url
+                $build=Get-OfficialLiveBuild $html
+                $build | Add-Member -NotePropertyName source -NotePropertyValue $url
+                $build
+                return
+            } catch { continue }
+        }
+        throw 'No confirmed LIVE release could be retrieved.'
+    }.ToString())
+    $script:liveVersionPending=$script:liveVersionDownload.BeginInvoke()
+    $liveVersionTimer.Start()
+}
+$window.Add_Closed({
+    $liveVersionTimer.Stop()
+    if ($script:liveVersionDownload) { $script:liveVersionDownload.Stop(); $script:liveVersionDownload.Dispose() }
+})
 
 function Update-RefineryDashboard {
     foreach ($refinery in $data.refineries) {
@@ -931,6 +1032,7 @@ Update-RefineryDashboard
 
 $snapshotUrl = "https://raw.githubusercontent.com/quattrobaje3na-png/SC-Mining-Material-Finder-2.0/main/mining_compiled.json"
 (Find-Control "SnapshotButton").Add_Click({
+    Start-LiveVersionCheck
     $button = Find-Control "SnapshotButton"
     $status = Find-Control "SnapshotStatus"
     $button.IsEnabled = $false
@@ -957,7 +1059,7 @@ $snapshotUrl = "https://raw.githubusercontent.com/quattrobaje3na-png/SC-Mining-M
             Remove-Item -Force
         $script:locationData = $newSnapshot
 
-        (Find-Control "UpdatedLabel").Text = "CHECKED CURRENT - $($data.verifiedAt)"
+        (Find-Control "UpdatedLabel").Text = "MINING DATA - $($data.verifiedAt)"
         $snapshotAction = if ($hadOldSnapshot) { "Replaced" } else { "Saved" }
         $status.Text = "Complete - $(@($newSnapshot.locations).Count) locations"
         $status.ToolTip = "$snapshotAction dataset $($newSnapshot.version) at $(Get-Date -Format 'HH:mm')"
@@ -2016,8 +2118,8 @@ function Update-RefineryJobNotification {
             $display = if ($left.TotalSeconds -le 0) { "Completed" } elseif ($left.TotalSeconds -lt 60) {
                 "{0}s" -f [int][Math]::Ceiling($left.TotalSeconds)
             } else {
-                $mins = [int][Math]::Ceiling($left.TotalMinutes)
-                "{0}h {1:00}m" -f [int][Math]::Floor($mins / 60), ($mins % 60)
+                $seconds = [long][Math]::Ceiling($left.TotalSeconds)
+                "{0}h {1:00}m {2:00}s" -f [long][Math]::Floor($seconds / 3600), [int][Math]::Floor(($seconds % 3600) / 60), ($seconds % 60)
             }
         }
         if ($run.timerDisplay -ne $display) { $run.timerDisplay = $display; $changed = $true }
@@ -2211,7 +2313,7 @@ if ($ValidateUi) {
         (Find-Control "RunHours").SelectedIndex = 2
         (Find-Control "RunMinutes").SelectedIndex = 15
         (Find-Control "SaveRunButton").RaiseEvent((New-Object System.Windows.RoutedEventArgs([System.Windows.Controls.Button]::ClickEvent)))
-        if ($runs.Count -ne 1 -or $runs[0].timerDisplay -ne "2h 15m") { throw "Run timer was not started." }
+        if ($runs.Count -ne 1 -or $runs[0].timerDisplay -notmatch '^2h (14|15)m [0-5][0-9]s$') { throw "Run timer was not started." }
         (Find-Control "RunLocation").SelectedIndex = 1
         (Find-Control "SaveRunButton").RaiseEvent((New-Object System.Windows.RoutedEventArgs([System.Windows.Controls.Button]::ClickEvent)))
         (Find-Control "RunGrid").SelectedIndex = 1
@@ -2391,5 +2493,6 @@ if ($ValidateUi) {
     Write-Output "Mining Helper interface loaded successfully: $($pages.Count) pages. Decoder test: $((Find-Control "SignatureResultName").Text), $mineralCount ship minerals, $vehicleMineralCount vehicle minerals with $vehicleLocationCount Feynmaline locations, $handMineralCount hand minerals with $handLocationCount Janalite locations, $allLocationCount Gold locations, $pyroLocationCount in Pyro, $quantainiumLocationCount Quantainium locations. Trade test: $tradeShipCount cargo ships, $tradeMineralCount mineral choices, Hull C $((Find-Control "TradeCargoScu").Text) SCU, $($testTradeRoutes[0].profitDisplay) profit. Loadout test: $((Find-Control "LoadoutStats").Text), $((Find-Control "EffectiveDps").Text), $((Find-Control "AssessmentStatus").Text). Gadget: $((Find-Control "GadgetBenefit").Text). Graph: instability $((Find-Control "InstabilityGraphValue").Text), window $((Find-Control "WindowGraphValue").Text), resistance $((Find-Control "ResistanceGraphValue").Text), filter $((Find-Control "FilterGraphValue").Text)."
     exit 0
 }
+Start-LiveVersionCheck
 $window.ShowDialog() | Out-Null
 

@@ -113,9 +113,12 @@ Prices, availability, mining balance, refinery yield, modules, gadgets, and
 server behavior can change. The rock assessment is a planning heuristic, not an
 exact simulation or safety guarantee.
 
-The bundled database was checked on 2026-09-01 against the current official
-Star Citizen LIVE release, Alpha 4.10.0 (`4.10.0-LIVE.12519617`). The app keeps
-the official game build separate from community snapshot revision numbers.
+The bundled LIVE profile was checked on 2026-10-16 against RSI's Alpha 4.10.2
+release notes (`4.10.2-LIVE.12881860`). Windows checks the official release listing
+at startup and when downloading a snapshot; failed checks retain the last known
+version and show a status message. The profile's mining-data date remains
+2026-09-01 for the Alpha 4.10.0 estimates, which have not been reverified for 4.10.2.
+The app keeps the official game build separate from community snapshot revisions.
 
 ## Data references
 
