@@ -1,12 +1,8 @@
 # ORE//OPS — Star Citizen Mining Helper
 
-> **Windows download paused — October 16, 2026.** Microsoft Defender detects the
-> current executable as **Trojan:Win32/Sabsik.FL.A!ml**. Its safety has not been
-> established, and the executable download has been removed pending review.
-> The developer has submitted it to Microsoft for review as a suspected false
-> positive. Microsoft clearance has not yet been verified.
-> Do not run previously downloaded copies or disable protection to run them.
-> See [security status](SECURITY-STATUS.md).
+> **Windows download available — October 20, 2026.** The current build passed a Microsoft Defender custom file scan with no threats found. Microsoft's separate submission review has not been verified. See [security status](SECURITY-STATUS.md).
+
+[Download Ops Helper.exe](https://github.com/planelander/ORE-HELPER/raw/refs/heads/main/dist/Ops%20Helper.exe)
 
 A lightweight Windows mining companion for Star Citizen. It runs locally with
 Windows PowerShell and WPF, so the first version has no installer or external
@@ -135,3 +131,4 @@ The app keeps the official game build separate from community snapshot revisions
   https://uexcorp.space/mining/pricing/
 - UEX API documentation:
   https://uexcorp.space/api/documentation/id/commodities/
+

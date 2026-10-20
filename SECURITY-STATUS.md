@@ -1,24 +1,18 @@
 # Windows executable security status
 
-As of October 16, 2026, Microsoft Defender reports the distributed
-`Ops Helper.exe` as **Trojan:Win32/Sabsik.FL.A!ml** (threat ID 2147780195).
-The detection occurred on both a GitHub-downloaded copy and the local build.
-Windows blocked access to the executable during verification.
+As of October 20, 2026, the current `dist/Ops Helper.exe` was rebuilt using
+`launcher/Build-Windows.ps1` and scanned with Microsoft Defender's
+`MpCmdRun.exe -Scan -ScanType 3 -File` command. The scan completed successfully
+and reported **no threats found**. The current executable download is available.
 
-This has not been confirmed as a false positive. No clean antivirus result or
-Microsoft review clearance is available. Distribution of the executable is
-paused, and the file has been removed from the current repository branch.
-Older commits may still contain the flagged executable; those copies should
-not be used. Source availability is not a security certification.
+SHA-256: `D93E8CFD5D988F1E15E0A797869BACD9BAC71E57FEB9919D6312820E1161983F`.
 
-The developer reports submitting the executable to Microsoft Security Intelligence
-on October 16, 2026, requesting review as a suspected false positive.
-Submission reference: `c42d1021-28d0-419e-a539-454612461956`.
-The developer believes the app is not malware; Microsoft clearance has not yet
-been verified. Submission does not mean the detection has been removed.
-A replacement should only be published after
-the detection is resolved and the exact release binary has been checked.
+On October 16, Defender detected an earlier executable as
+**Trojan:Win32/Sabsik.FL.A!ml** (threat ID 2147780195), and downloads were paused.
+The developer reported submitting that executable to Microsoft as a suspected
+false positive. Submission reference: `c42d1021-28d0-419e-a539-454612461956`.
 
-Code signing identifies the publisher but does not remove a malware detection.
-Do not disable Defender, add exclusions, or restore the flagged file merely to
-run this app.
+Microsoft's analyst determination has not been verified: the submission page
+requires sign-in. The current clean scan is not confirmation of submission
+approval or a guarantee that every antivirus product will accept the file.
+Do not disable Defender or add exclusions to run a blocked copy.
